@@ -1,0 +1,103 @@
+[
+  {
+    "id": "competitive-programming-portfolio",
+    "title": "1000+ Problems Solved",
+    "peakRating": "",
+    "subtitle": "Dynamic problem-solving portfolio spanning competitive programming platforms",
+    "description": "Extensive experience across multiple platforms covering algorithms, data structures, graph theory, dynamic programming, and mathematical optimization with proven track record in competitive programming.",
+    "logo": "https://miro.medium.com/1*8eiYwgU5n3y9k6k9o4gjHA.png",
+    "username": "Problem Stats",
+    "profileUrl": "https://github.com/niloychandrasarker/Problem-Solving-Stats"
+  },
+
+  {
+    "id": "codeforces",
+    "title": "Codeforces Pupil",
+    "peakRating": "Peak Rating: [max. pupil, 1274] | 800+ Problems Solved |",
+    "subtitle": "Consistent performer in rated contests",
+    "description": "Active participant in competitive programming contests with strong algorithmic problem-solving skills. Regularly competing in rated rounds to improve problem-solving speed and accuracy under time pressure.",
+    "logo": "https://art.npanuhin.me/SVG/Codeforces/Codeforces.colored.svg",
+    "username": "niloysarker_cs",
+    "profileUrl": "https://codeforces.com/profile/niloysarker_cs"
+  },
+  {
+    "id": "leetcode",
+    "title": "LeetCode Expert",
+    "peakRating": "Problems Solved: 54+ |",
+    "subtitle": "Strong foundation in DSA and algorithms",
+    "description": "Proficient in solving diverse coding challenges covering arrays, strings, trees, graphs, and dynamic programming. Strong focus on writing clean, optimized solutions with excellent time and space complexity.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png",
+    "username": "niloychandrasarker",
+    "profileUrl": "https://leetcode.com/u/niloychandrasarker/"
+  },
+  {
+    "id": "hackerrank",
+    "title": "HackerRank",
+    "peakRating": "",
+    "subtitle": "Certified problem solver",
+    "description": "Strong skills in problem solving, data structures, and algorithms. Earned multiple certifications and badges across various domains including C++, SQL, and problem-solving tracks with consistent performance.",
+    "logo": "https://hrcdn.net/fcore/assets/brand/logo-new-white-green-a5cb16e0ae.svg",
+    "username": "niloysarker_cs",
+    "profileUrl": "https://www.hackerrank.com/profile/niloysarker_cs"
+  },
+  {
+    "id": "beecrowd",
+    "title": "Beecrowd Problem Solver",
+    "peakRating": "Problems Solved: 238+",
+    "subtitle": "",
+    "description": "Skilled in mathematical problem-solving and algorithm implementation with expertise in computational geometry, number theory, and combinatorics. Consistent progress across various problem categories.",
+    "logo": "https://beecrowd.com/wp-content/uploads/2024/03/Main-Logo-beecrowd-H.svg",
+    "username": "Niloy_Chandra_Sarker",
+    "profileUrl": "https://judge.beecrowd.com/en/profile/769455"
+  },
+  {
+    "id": "codechef",
+    "title": "CodeChef ",
+    "peakRating": "Problems Solved: 22+",
+    "subtitle": "",
+    "description": "Elite competitive programmer with exceptional performance in long challenges and cook-offs. Expertise in advanced data structures, segment trees, and complex mathematical algorithms with proven problem-solving abilities.",
+    "logo": "https://cdn.codechef.com/images/cc-logo.svg",
+    "username": "niloysarker19",
+    "profileUrl": "https://www.codechef.com/users/niloysarker19"
+  },
+  {
+    "id": "atcoder",
+    "title": "AtCoder Yellow Coder",
+    "peakRating": "Peak Rating: 66",
+    "subtitle": "",
+    "description": "High-level performer in algorithm-focused contests with strong analytical thinking. Specialized in solving challenging mathematical and constructive problems requiring deep algorithmic insights and creative approaches.",
+    "logo": "https://img.atcoder.jp/assets/atcoder.png",
+    "username": "Niloy19",
+    "profileUrl": "https://atcoder.jp/users/Niloy19?contestType=algo"
+  },
+  {
+    "id": "cses",
+    "title": "CSES Problem Set",
+    "peakRating": "Problems Solved: 19+ |",
+    "subtitle": "Mastery of fundamental algorithms",
+    "description": "Strong foundation in classical algorithms and data structures. Solved problems spanning sorting, searching, dynamic programming, graph algorithms, tree algorithms, and string processing with efficient implementations.",
+    "logo": "https://cses.fi/logo.png",
+    "username": "niloy.cs",
+    "profileUrl": "https://cses.fi/user/193520"
+  },
+  {
+    "id": "coding-ninjas",
+    "title": "Coding Ninjas Expert",
+    "peakRating": "Problems Solved: 19+",
+    "subtitle": "Interview-focused problem solving",
+    "description": "Comprehensive problem-solving experience in data structures and algorithms. Proficient in arrays, linked lists, stacks, queues, trees, graphs, and dynamic programming with focus on interview preparation.",
+    "logo": "https://files.codingninjas.in/new_cn_logo-29829.svg",
+    "username": "Niloy",
+    "profileUrl": "https://www.naukri.com/code360/profile/Niloy"
+  },
+  {
+    "id": "vjudge",
+    "title": "VJudge",
+    "peakRating": "Problems Solved: 74+ |",
+    "subtitle": "Multi-platform problem solving",
+    "description": "Versatile problem solver across multiple online judges. Experienced in solving problems from various competitive programming platforms including UVa, SPOJ, POJ, and others through unified virtual judge interface.",
+    "logo": "https://vjudge.net/static/images/logo.png",
+    "username": "niloysarker19",
+    "profileUrl": "https://vjudge.net/user/niloysarker19"
+  }
+]

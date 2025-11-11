@@ -1,0 +1,25 @@
+[
+  {
+    "institution": "National Institute of Textile Engineering and Research (NITER)",
+    "subLabel": "A constituent institute of the University of Dhaka",
+    "logo": "/Logo/Niter-logo.png",
+    "degree": "B.Sc. in Computer Science and Engineering",
+    "role": "Undergraduate Student",
+    "start": "2022-11",
+    "end": "present",
+    "startLabel": "Nov 2022",
+    "endLabel": "Present",
+    "cgpa": "CGPA: 3.52 / 4.00"
+  },
+  {
+    "institution": "Alamgir Monsur (minto)memorial College, Mymensingh",
+    "logo": "/Logo/mintu-logo.png",
+    "degree": "Higher Secondary Certificate (Science)",
+    "role": "Student",
+    "start": "2019-07",
+    "end": "2021-06",
+    "startLabel": "Jul 2019",
+    "endLabel": "Jun 2021",
+    "cgpa": "GPA: 5.00 / 5.00"
+  }
+]

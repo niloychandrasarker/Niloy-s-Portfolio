@@ -1,0 +1,53 @@
+{
+  "Languages": [
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "C++", "icon": "SiCplusplus" },
+    { "name": "JavaScript", "icon": "SiJavascript" },
+    { "name": "TypeScript", "icon": "SiTypescript" },
+    { "name": "C", "icon": "SiC" }
+  ],
+  "Frontend": [
+    { "name": "React.js", "icon": "FaReact" },
+    { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+    { "name": "Material UI", "icon": "SiMui" },
+    { "name": "shadcn/ui", "icon": "SiShadcnui" },
+    { "name": "HTML", "icon": "SiHtml5" },
+    { "name": "CSS", "icon": "SiCss3" }
+  ],
+  "Backend": [
+    { "name": "Spring Boot", "icon": "SiSpringboot" },
+    { "name": "REST API", "icon": "TbApi" },
+    { "name": "Node.js", "icon": "FaNodeJs" },
+    { "name": "Express.js", "icon": "SiExpress" }
+  ],
+  "Database": [
+    { "name": "PostgreSQL", "icon": "SiPostgresql" },
+    { "name": "MySQL", "icon": "SiMysql" },
+    { "name": "MongoDB", "icon": "SiMongodb" }
+  ],
+  "Tools": [
+    { "name": "Git", "icon": "FaGitAlt" },
+    { "name": "GitHub", "icon": "FaGithub" },
+    { "name": "CI/CD", "icon": "SiGithubactions" },
+    { "name": "JetBrains IDE", "icon": "SiJetbrains" },
+    { "name": "VS Code", "icon": "SiVisualstudiocode" },
+    { "name": "Postman", "icon": "SiPostman" }
+  ],
+  "Others": [
+       { "name": "Data Structures & Algorithms", "icon": "TbBinaryTree" },
+    { "name": "Competitive Programming", "icon": "SiCodeforces" },
+    { "name": "Linux", "icon": "SiLinux" },
+    { "name": "System Design", "icon": "TbTopologyStar3" },
+    { "name": "LaTeX", "icon": "SiLatex" },
+    { "name": "Markdown", "icon": "SiMarkdown" },
+    { "name": "Vercel", "icon": "SiVercel" },
+    { "name": "Netlify", "icon": "SiNetlify" }
+ 
+  ],
+  "Recent Learning": [
+    { "name": "AI/ML", "icon": "SiOpenai", "learning": true },
+    { "name": "Next.js", "icon": "SiNextdotjs", "learning": true },
+    { "name": "Docker", "icon": "SiDocker", "learning": true },
+    { "name": "GraphQL", "icon": "SiGraphql", "learning": true }
+  ]
+}
