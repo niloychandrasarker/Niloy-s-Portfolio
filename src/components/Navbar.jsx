@@ -308,7 +308,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
+          <div className="md:hidden pb-4 animate-slide-down bg-white/95 backdrop-blur-md shadow-2xl rounded-b-2xl border-b border-gray-200">
             <div className="flex flex-col space-y-1">
               {navItems.map((item) => (
                 <a
