@@ -33,7 +33,7 @@ const Navbar = () => {
       },
       { id: "community", label: "Community / Reach", href: "#community" },
       { id: "blog", label: "Blog", href: "#blog" },
-      { id: "contact", label: "Contact", href: "#contact" }
+      { id: "contact", label: "Contact", href: "#contact" },
     ],
     []
   );
@@ -178,7 +178,32 @@ const Navbar = () => {
           {/* Left: Logo/Name */}
           <div className="shrink-0 animate-slide-in-left">
             <button
-              onClick={() => navigate("/")}
+              onClick={() => {
+                if (location.pathname !== "/") {
+                  navigate("/");
+                  setTimeout(() => {
+                    const homeSection = document.querySelector("#home");
+                    if (homeSection) {
+                      window.scrollTo({
+                        top: homeSection.offsetTop - 80,
+                        behavior: "smooth",
+                      });
+                    } else {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
+                  }, 100);
+                } else {
+                  const homeSection = document.querySelector("#home");
+                  if (homeSection) {
+                    window.scrollTo({
+                      top: homeSection.offsetTop - 80,
+                      behavior: "smooth",
+                    });
+                  } else {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }
+                }
+              }}
               className="text-3xl md:text-4xl font-normal text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 cursor-pointer hover-scale"
               style={{ fontFamily: "'Pacifico', cursive" }}
             >
