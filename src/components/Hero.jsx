@@ -84,18 +84,6 @@ const Hero = () => {
     );
   };
 
-  const handleHireMe = () => {
-    // Scroll to contact section
-    const contactSection = document.querySelector("#contact");
-    if (contactSection) {
-      const offsetTop = contactSection.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="home"
@@ -140,8 +128,10 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animation-delay-600">
-              <button
-                onClick={handleHireMe}
+              <a
+                href="https://wa.me/8801700000000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative px-8 py-4 bg-linear-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
@@ -149,7 +139,7 @@ const Hero = () => {
                   Hire Me
                 </span>
                 <div className="absolute inset-0 bg-linear-to-r from-purple-700 to-blue-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              </button>
+              </a>
 
               <button
                 onClick={handleDownloadResume}
