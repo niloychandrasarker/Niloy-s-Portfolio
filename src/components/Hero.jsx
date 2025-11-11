@@ -56,7 +56,7 @@ const Hero = () => {
     },
     {
       icon: DiscordIcon,
-      href: "https://discord.com/channels/@me",
+      href: "https://discord.com/users/1121447718129238036",
       label: "Discord",
       color: "hover:text-indigo-600",
       isCustom: true,

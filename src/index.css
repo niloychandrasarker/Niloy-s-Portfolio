@@ -383,3 +383,24 @@ a {
 .card-entrance.delay-6 {
   animation-delay: 0.6s;
 }
+
+/* Blog Card Corner Effect */
+.blog-card-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent #3b82f6 transparent transparent;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.group:hover .blog-card-corner {
+  border-width: 0 120px 120px 0;
+  opacity: 1;
+}

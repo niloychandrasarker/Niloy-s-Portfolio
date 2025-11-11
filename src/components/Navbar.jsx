@@ -33,8 +33,7 @@ const Navbar = () => {
       },
       { id: "community", label: "Community / Reach", href: "#community" },
       { id: "blog", label: "Blog", href: "#blog" },
-      { id: "testimonials", label: "Testimonials", href: "#testimonials" },
-      { id: "contact", label: "Contact", href: "#contact" }, // moved to bottom
+      { id: "contact", label: "Contact", href: "#contact" }
     ],
     []
   );
@@ -168,8 +167,10 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300  ${
+        isVisible
+          ? "translate-y-0"
+          : "-translate-y-full bg-white/95 backdrop-blur-md shadow-lg"
       } `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

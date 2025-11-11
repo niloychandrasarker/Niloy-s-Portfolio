@@ -10,13 +10,10 @@ const ProblemSolving = () => {
   }, []);
 
   return (
-    <section
-      id="problem-solving"
-      className="py-10 md:py-10 bg-white "
-    >
+    <section id="problem-solving" className="py-10 md:py-10 bg-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-12 animate-fade-in-up">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             Problem Solving Activities
           </h2>
@@ -29,9 +26,7 @@ const ProblemSolving = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {platforms.length === 0 ? (
             <div className="col-span-full text-center py-12">
-              <p className="text-gray-500">
-                Loading platforms...
-              </p>
+              <p className="text-gray-500">Loading platforms...</p>
             </div>
           ) : (
             platforms.map((platform, index) => (
@@ -83,7 +78,7 @@ const ProblemSolving = () => {
                     href={platform.profileUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded transition-colors duration-300"
+                    className="inline-block px-4 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded transition-colors duration-300"
                   >
                     {platform.username}
                   </a>

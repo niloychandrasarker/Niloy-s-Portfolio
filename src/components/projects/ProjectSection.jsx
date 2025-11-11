@@ -11,7 +11,7 @@ const ProjectSection = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-16 bg-white" id="projects">
+    <section className="py-10 md:py-10 bg-white" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-8 text-center animate-fade-in-up">

@@ -36,7 +36,7 @@
     "peakRating": "",
     "subtitle": "Certified problem solver",
     "description": "Strong skills in problem solving, data structures, and algorithms. Earned multiple certifications and badges across various domains including C++, SQL, and problem-solving tracks with consistent performance.",
-    "logo": "https://hrcdn.net/fcore/assets/brand/logo-new-white-green-a5cb16e0ae.svg",
+    "logo": "https://cdn.prod.website-files.com/66b6d7fd4d3e9cef94717176/6765dc51a13e31531996cef3_logo-dark.svg",
     "username": "niloysarker_cs",
     "profileUrl": "https://www.hackerrank.com/profile/niloysarker_cs"
   },
@@ -62,7 +62,7 @@
   },
   {
     "id": "atcoder",
-    "title": "AtCoder Yellow Coder",
+    "title": "AtCoder ",
     "peakRating": "Peak Rating: 66",
     "subtitle": "",
     "description": "High-level performer in algorithm-focused contests with strong analytical thinking. Specialized in solving challenging mathematical and constructive problems requiring deep algorithmic insights and creative approaches.",
@@ -82,7 +82,7 @@
   },
   {
     "id": "coding-ninjas",
-    "title": "Coding Ninjas Expert",
+    "title": "Coding Ninjas ",
     "peakRating": "Problems Solved: 19+",
     "subtitle": "Interview-focused problem solving",
     "description": "Comprehensive problem-solving experience in data structures and algorithms. Proficient in arrays, linked lists, stacks, queues, trees, graphs, and dynamic programming with focus on interview preparation.",
@@ -96,7 +96,7 @@
     "peakRating": "Problems Solved: 74+ |",
     "subtitle": "Multi-platform problem solving",
     "description": "Versatile problem solver across multiple online judges. Experienced in solving problems from various competitive programming platforms including UVa, SPOJ, POJ, and others through unified virtual judge interface.",
-    "logo": "https://vjudge.net/static/images/logo.png",
+    "logo": "https://vjudge.net/static/bundle/11b24ab2156955d8f3fa.ico",
     "username": "niloysarker19",
     "profileUrl": "https://vjudge.net/user/niloysarker19"
   }
