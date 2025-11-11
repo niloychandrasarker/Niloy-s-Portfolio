@@ -168,7 +168,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-lg ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } `}
     >
@@ -197,8 +197,8 @@ const Navbar = () => {
                 onClick={(e) => handleNavClick(e, item.href)}
                 className={`relative px-3 lg:px-4 py-2 text-sm lg:text-base font-medium transition-all duration-300 rounded-lg group ${
                   activeSection === item.id
-                    ? "text-blue-600 dark:text-blue-400"
-                    : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    ? "text-blue-600"
+                    : "text-gray-700 hover:text-blue-600"
                 }`}
               >
                 {item.label}
@@ -219,8 +219,8 @@ const Navbar = () => {
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   className={`relative px-3 lg:px-4 py-2 text-sm lg:text-base font-medium transition-all duration-300 rounded-lg flex items-center group ${
                     dropdownItems.some((item) => item.id === activeSection)
-                      ? "text-blue-600 dark:text-blue-400"
-                      : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-blue-600"
                   }`}
                 >
                   More
@@ -250,7 +250,7 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {isDropdownOpen && (
-                  <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-xl shadow-2xl py-2 ring-1 ring-black dark:ring-gray-700 ring-opacity-5 animate-fade-in">
+                  <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl py-2 ring-1 ring-black ring-opacity-5 animate-fade-in">
                     {dropdownItems.map((item) => (
                       <a
                         key={item.id}
@@ -258,8 +258,8 @@ const Navbar = () => {
                         onClick={(e) => handleNavClick(e, item.href)}
                         className={`block px-4 py-3 text-sm font-medium transition-all duration-200 ${
                           activeSection === item.id
-                            ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30"
-                            : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700"
+                            ? "text-blue-600 bg-blue-50"
+                            : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                         }`}
                       >
                         {item.label}
@@ -274,7 +274,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -291,8 +291,8 @@ const Navbar = () => {
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg ${
                     activeSection === item.id
-                      ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30"
-                      : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-700"
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                   }`}
                 >
                   {item.label}

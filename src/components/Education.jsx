@@ -37,14 +37,14 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-10 md:py-10 bg-white dark:bg-gray-950 transition-colors "
+      className="py-10 md:py-10 bg-white transition-colors "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
             Education
           </h2>
-          <p className="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
             Academic background and performance overview.
           </p>
         </div>
@@ -57,18 +57,18 @@ const Education = () => {
             return (
               <div
                 key={edu.institution + edu.start}
-                className={`relative group rounded-2xl p-5 md:p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover-lift overflow-hidden animate-slide-up stagger-${
+                className={`relative group rounded-2xl p-5 md:p-6 bg-white border border-gray-200 shadow-sm hover-lift overflow-hidden animate-slide-up stagger-${
                   i + 1
                 }`}
               >
                 {/* Accent bar */}
                 <div className="absolute left-0 top-0 h-full w-1 bg-linear-to-b from-purple-500 via-indigo-500 to-blue-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
                 {/* Inner subtle gradient overlay */}
-                <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/0 via-purple-50/30 dark:via-indigo-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-white/0 via-purple-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <div className="flex items-start gap-4">
                   {/* Logo */}
-                  <div className="shrink-0 w-14 h-14 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 shadow-inner">
+                  <div className="shrink-0 w-14 h-14 rounded-xl overflow-hidden border border-gray-200 bg-gray-100 shadow-inner">
                     <img
                       src={edu.logo}
                       alt={edu.institution}
@@ -80,20 +80,20 @@ const Education = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-2 grow">
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white leading-snug">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-snug">
                       {edu.institution}
                     </h3>
                     {edu.subLabel && (
-                      <p className="text-xs md:text-sm text-purple-600 dark:text-purple-400 font-medium tracking-wide">
+                      <p className="text-xs md:text-sm text-purple-600 font-medium tracking-wide">
                         {edu.subLabel}
                       </p>
                     )}
                     <div className="flex flex-wrap gap-4 text-sm">
-                      <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                      <div className="flex items-center gap-1 text-gray-600">
                         <Calendar className="w-4 h-4" />
                         <span>{durationText}</span>
                       </div>
-                      {/* <div className="flex items-center gap-1 text-gray-600 dark:text-gray-400">
+                      {/* <div className="flex items-center gap-1 text-gray-600">
                         <MapPin className="w-4 h-4" />
                         <span>{edu.location}</span>
                       </div> */}
@@ -106,12 +106,12 @@ const Education = () => {
                     {edu.degree}
                   </p>
                   {edu.role && (
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
+                    <p className="text-sm text-gray-700">
                       {edu.role}
                     </p>
                   )}
                   {edu.cgpa && (
-                    <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    <p className="text-sm font-semibold text-gray-800">
                       {edu.cgpa}
                     </p>
                   )}

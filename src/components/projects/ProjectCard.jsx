@@ -12,13 +12,13 @@ const ProjectCard = ({ project, index = 0 }) => {
 
   return (
     <div
-      className={`group relative rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-lg hover-lift border border-gray-200 dark:border-gray-700 animate-scale-in stagger-${Math.min(
+      className={`group relative rounded-2xl overflow-hidden bg-white shadow-lg hover-lift border border-gray-200 animate-scale-in stagger-${Math.min(
         index + 1,
         10
       )}`}
     >
       {/* Thumbnail at top */}
-      <div className="relative h-64 bg-linear-to-br from-gray-100 via-gray-50 to-gray-100 dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 overflow-hidden">
+      <div className="relative h-64 bg-linear-to-br from-gray-100 via-gray-50 to-gray-100 overflow-hidden">
         <img
           src={thumbnail || "/vite.svg"}
           alt={name}
@@ -34,12 +34,12 @@ const ProjectCard = ({ project, index = 0 }) => {
       {/* Card Content */}
       <div className="p-6">
         {/* Project Name */}
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
           {name}
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-gray-600 dark:text-gray-400 text-center leading-relaxed mb-4 line-clamp-3">
+        <p className="text-sm text-gray-600 text-center leading-relaxed mb-4 line-clamp-3">
           {description}
         </p>
 
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, index = 0 }) => {
             {displayStack.map((tech, idx) => (
               <span
                 key={idx}
-                className="inline-flex items-center rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 px-3 py-0.5 text-xs font-medium text-gray-700 dark:text-gray-300"
+                className="inline-flex items-center rounded-md bg-gray-100 border border-gray-300 px-3 py-0.5 text-xs font-medium text-gray-700"
               >
                 {tech}
               </span>
@@ -58,7 +58,7 @@ const ProjectCard = ({ project, index = 0 }) => {
         )}
 
         {/* Divider line */}
-        <div className="border-t border-gray-200 dark:border-gray-700 mb-4"></div>
+        <div className="border-t border-gray-200 mb-4"></div>
 
         {/* View Button - Blue theme (smaller, centered) */}
         <div className="flex justify-center">

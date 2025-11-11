@@ -99,7 +99,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-white dark:bg-gray-950"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -107,10 +107,10 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-8">
             {/* Greeting */}
             <div className="animate-fade-in-up">
-              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium mb-2">
+              <p className="text-lg md:text-xl text-gray-600 font-medium mb-2">
                 Hi, I'm
               </p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
                 Niloy Chandra Sarker
               </h1>
             </div>
@@ -126,12 +126,12 @@ const Hero = () => {
                 typeSpeed={50}
                 backSpeed={30}
                 loop
-                className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-200"
+                className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800"
               />
             </div>
 
             {/* Description */}
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animation-delay-400">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animation-delay-400">
               Software Engineer | Full Stack Developer passionate about creating
               innovative solutions | Researching AI/ML-driven automation and
               intelligent applications | Competitive Programmer with strong
@@ -153,7 +153,7 @@ const Hero = () => {
 
               <button
                 onClick={handleDownloadResume}
-                className="group px-8 py-4 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 text-gray-800 dark:text-white font-semibold rounded-xl hover:border-purple-600 hover:text-purple-600 dark:hover:text-purple-400 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="group px-8 py-4 bg-white border-2 border-gray-300 text-gray-800 font-semibold rounded-xl hover:border-purple-600 hover:text-purple-600 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
               >
                 <span className="flex items-center justify-center gap-2">
                   <Download size={20} className="group-hover:animate-bounce" />
@@ -172,21 +172,21 @@ const Hero = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group relative p-3 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-xl transform hover:scale-110 transition-all duration-300 ${social.color}`}
+                    className={`group relative p-3 bg-white rounded-full shadow-md hover:shadow-xl transform hover:scale-110 transition-all duration-300 ${social.color}`}
                     aria-label={social.label}
                   >
                     {social.isCustom ? (
                       <Icon
                         size={18}
-                        className="text-gray-700 dark:text-gray-300 group-hover:text-current transition-colors"
+                        className="text-gray-700 group-hover:text-current transition-colors"
                       />
                     ) : (
                       <Icon
                         size={18}
-                        className="text-gray-700 dark:text-gray-300 group-hover:text-current transition-colors"
+                        className="text-gray-700 group-hover:text-current transition-colors"
                       />
                     )}
-                    <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                    <span className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                       {social.label}
                     </span>
                   </a>
@@ -202,12 +202,12 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 rounded-3xl opacity-75 blur group-hover:opacity-100 group-hover:blur-lg transition-all duration-500 animate-pulse"></div>
 
               {/* Main White Card Container */}
-              <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 sm:p-10 shadow-2xl w-80 sm:w-96">
+              <div className="relative bg-white rounded-3xl p-8 sm:p-10 shadow-2xl w-80 sm:w-96">
                 {/* Profile Image with Static Gradient Border */}
                 <div className="relative w-48 h-48 sm:w-56 sm:h-56 mx-auto mb-6">
                   {/* Static Gradient Border */}
                   <div className="absolute inset-0 rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 p-1">
-                    <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-900">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-white">
                       <img
                         src="/Hero/hero_image.jpg"
                         alt="Niloy Chandra Sarker"
@@ -222,12 +222,12 @@ const Hero = () => {
                 </div>
 
                 {/* Name */}
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white text-center mb-3 tracking-wide">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-3 tracking-wide">
                   NILOY CHANDRA SARKER
                 </h2>
 
                 {/* Title */}
-                <p className="text-gray-600 dark:text-gray-400 text-center text-base sm:text-lg mb-8">
+                <p className="text-gray-600 text-center text-base sm:text-lg mb-8">
                   Full Stack Web Developer
                 </p>
 
@@ -241,7 +241,7 @@ const Hero = () => {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group/icon p-2.5 bg-gray-800 dark:bg-gray-700 rounded-full hover:bg-linear-to-r hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+                        className="group/icon p-2.5 bg-gray-800 rounded-full hover:bg-linear-to-r hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
                         aria-label={social.label}
                       >
                         {social.isCustom ? (
@@ -266,7 +266,7 @@ const Hero = () => {
 
         {/* Scroll Down Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="flex flex-col items-center gap-2 text-gray-600 dark:text-gray-400">
+          <div className="flex flex-col items-center gap-2 text-gray-600">
             <span className="text-sm font-medium">Scroll Down</span>
             <svg
               className="w-6 h-6"

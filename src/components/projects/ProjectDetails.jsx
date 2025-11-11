@@ -20,36 +20,36 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <div className="min-h-[60vh] flex items-center justify-center bg-gray-50 dark:bg-gray-950">
+      <div className="min-h-[60vh] flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600 dark:text-gray-400">Loading project...</p>
+          <p className="text-gray-600">Loading project...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <section className="py-12 md:py-16  from-gray-50 to-white dark:from-gray-950 dark:to-gray-900 min-h-screen">
+    <section className="py-12 md:py-16  from-gray-50 to-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
         <nav className="mb-8 flex items-center gap-2 text-sm">
           <Link
             to="/"
-            className="flex items-center gap-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="flex items-center gap-1.5 text-gray-600 hover:text-blue-600 transition-colors"
           >
             <FaArrowLeft className="w-3 h-3" />
             Home
           </Link>
-          <span className="text-gray-400 dark:text-gray-600">/</span>
+          <span className="text-gray-400">/</span>
           <Link
             to="/projects"
-            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="text-gray-600 hover:text-blue-600 transition-colors"
           >
             Projects
           </Link>
-          <span className="text-gray-400 dark:text-gray-600">/</span>
-          <span className="text-gray-900 dark:text-white font-medium truncate max-w-xs">
+          <span className="text-gray-400">/</span>
+          <span className="text-gray-900 font-medium truncate max-w-xs">
             {project.name}
           </span>
         </nav>
@@ -58,10 +58,10 @@ const ProjectDetails = () => {
         <div className="mb-12">
           {/* Project Title & Description */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               {project.name}
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-4xl">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-4xl">
               {project.description}
             </p>
           </div>
@@ -69,8 +69,8 @@ const ProjectDetails = () => {
           {/* Project Thumbnail with Enhanced Design */}
           <div className="relative group">
             <div className="absolute -inset-1 bg-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-            <div className="relative rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-2xl">
-              <div className="aspect-video bg-gray-100 dark:bg-gray-800">
+            <div className="relative rounded-3xl overflow-hidden border border-gray-200 bg-white shadow-2xl">
+              <div className="aspect-video bg-gray-100">
                 <img
                   src={project.thumbnail || "/vite.svg"}
                   alt={project.name}
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
                 href={project.frontendUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white font-semibold rounded-xl hover:border-blue-600 dark:hover:border-blue-500 hover:bg-gray-50 dark:hover:bg-gray-700 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 font-semibold rounded-xl hover:border-blue-600 hover:bg-gray-50 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
               >
                 <FaGithub className="text-xl" />
                 Frontend Code
@@ -114,7 +114,7 @@ const ProjectDetails = () => {
                 href={project.backendUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white font-semibold rounded-xl hover:border-blue-600 dark:hover:border-blue-500 hover:bg-gray-50 dark:hover:bg-gray-700 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 font-semibold rounded-xl hover:border-blue-600 hover:bg-gray-50 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300"
               >
                 <FaGithub className="text-xl" />
                 Backend Code
@@ -128,24 +128,24 @@ const ProjectDetails = () => {
           {/* Main Content - Left Side */}
           <div className="lg:col-span-2 space-y-8">
             {/* Overview Section */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200 dark:border-gray-800">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                 <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
                 Project Overview
               </h2>
-              <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 {project.fullDescription || project.description}
               </p>
             </div>
 
             {/* Purpose Section */}
             {project.purpose && (
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6 md:p-8 border border-blue-200 dark:border-blue-800 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <div className="bg-blue-50 rounded-2xl p-6 md:p-8 border border-blue-200 shadow-lg">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                   <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
                   Purpose
                 </h2>
-                <p className="text-base md:text-lg text-gray-800 dark:text-gray-200 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-800 leading-relaxed">
                   {project.purpose}
                 </p>
               </div>
@@ -155,8 +155,8 @@ const ProjectDetails = () => {
             {project.keyFeatures &&
               Array.isArray(project.keyFeatures) &&
               project.keyFeatures.length > 0 && (
-                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200 dark:border-gray-800">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
+                <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                     <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
                     Key Features
                   </h2>
@@ -164,12 +164,12 @@ const ProjectDetails = () => {
                     {project.keyFeatures.map((feature, idx) => (
                       <div
                         key={idx}
-                        className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-600 hover:shadow-md transition-all duration-300 group"
+                        className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-300 group"
                       >
                         <span className=" w-7 h-7 flex items-center justify-center rounded-lg bg-blue-600 text-white text-sm font-bold shadow-md group-hover:scale-110 transition-transform">
                           ✓
                         </span>
-                        <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed pt-0.5">
+                        <p className="text-sm md:text-base text-gray-700 leading-relaxed pt-0.5">
                           {feature}
                         </p>
                       </div>
@@ -182,8 +182,8 @@ const ProjectDetails = () => {
           {/* Sidebar - Right Side */}
           <div className="space-y-6 sticky top-24">
             {/* Project Metadata */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-800">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-2">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
                 <span className="w-1 h-6 bg-blue-600 rounded-full"></span>
                 Project Details
               </h3>
@@ -191,10 +191,10 @@ const ProjectDetails = () => {
                 {/* Project Type */}
                 {project.projectType && (
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <span className="text-sm font-medium text-gray-500">
                       Type
                     </span>
-                    <span className="text-sm font-semibold text-gray-900 dark:text-white px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                    <span className="text-sm font-semibold text-gray-900 px-3 py-1 bg-blue-50 rounded-lg">
                       {project.projectType}
                     </span>
                   </div>
@@ -203,14 +203,14 @@ const ProjectDetails = () => {
                 {/* Status */}
                 {project.status && (
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <span className="text-sm font-medium text-gray-500">
                       Status
                     </span>
                     <span
                       className={`text-sm font-semibold px-3 py-1 rounded-lg ${
                         project.status === "Completed"
-                          ? "bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-400"
-                          : "bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400"
+                          ? "bg-green-50 text-green-700"
+                          : "bg-yellow-50 text-yellow-700"
                       }`}
                     >
                       {project.status}
@@ -221,10 +221,10 @@ const ProjectDetails = () => {
                 {/* Role */}
                 {project.role && (
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <span className="text-sm font-medium text-gray-500">
                       Role
                     </span>
-                    <span className="text-sm font-semibold text-gray-900 dark:text-white text-right max-w-[60%]">
+                    <span className="text-sm font-semibold text-gray-900 text-right max-w-[60%]">
                       {project.role}
                     </span>
                   </div>
@@ -233,10 +233,10 @@ const ProjectDetails = () => {
                 {/* Team Size */}
                 {project.teamSize && (
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    <span className="text-sm font-medium text-gray-500">
                       Team Size
                     </span>
-                    <span className="text-sm font-semibold text-gray-900 dark:text-white">
+                    <span className="text-sm font-semibold text-gray-900">
                       {project.teamSize}{" "}
                       {project.teamSize === 1 ? "member" : "members"}
                     </span>
@@ -247,8 +247,8 @@ const ProjectDetails = () => {
 
             {/* Technologies Used */}
             {project.stack && typeof project.stack === "object" && (
-              <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-800">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-2">
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+                <h3 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-2">
                   <span className="w-1 h-6 bg-blue-600 rounded-full"></span>
                   Tech Stack
                 </h3>
@@ -258,14 +258,14 @@ const ProjectDetails = () => {
                       Array.isArray(techs) &&
                       techs.length > 0 && (
                         <div key={category}>
-                          <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 mb-2.5 uppercase tracking-wider">
+                          <h4 className="text-xs font-bold text-gray-500 mb-2.5 uppercase tracking-wider">
                             {category}
                           </h4>
                           <div className="flex flex-wrap gap-2">
                             {techs.map((tech) => (
                               <span
                                 key={tech}
-                                className="inline-flex items-center px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg text-xs font-medium text-gray-800 dark:text-gray-200 hover:shadow-md transition-shadow"
+                                className="inline-flex items-center px-3 py-1.5 bg-blue-50 border border-blue-200 rounded-lg text-xs font-medium text-gray-800 hover:shadow-md transition-shadow"
                               >
                                 {tech}
                               </span>
@@ -282,8 +282,8 @@ const ProjectDetails = () => {
 
         {/* Project Gallery */}
         {Array.isArray(project.gallery) && project.gallery.length > 0 && (
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200 dark:border-gray-800">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center gap-3">
+          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-200">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
               <span className="w-1.5 h-8 bg-blue-600 rounded-full"></span>
               Project Gallery
             </h2>
@@ -291,7 +291,7 @@ const ProjectDetails = () => {
               {project.gallery.map((src, idx) => (
                 <div
                   key={idx}
-                  className="group relative rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-lg hover:shadow-2xl transition-all duration-300"
+                  className="group relative rounded-2xl overflow-hidden bg-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                   <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img

@@ -6,7 +6,7 @@ import * as Tb from "react-icons/tb";
 
 // Fallback icon if mapping fails
 const FallbackIcon = () => (
-  <div className="w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-600" />
+  <div className="w-4 h-4 rounded-full bg-gray-300" />
 );
 
 // Accent colors removed for ultra-simple layout
@@ -30,14 +30,14 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-10 md:py-10 bg-white dark:bg-gray-950 transition-colors"
+      className="py-10 md:py-10 bg-white transition-colors"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
             Skills & Technologies
           </h2>
-          <p className="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
             A snapshot of the tools, languages, and platforms I work with.
           </p>
         </div>
@@ -53,7 +53,7 @@ const Skills = () => {
                   10
                 )}`}
               >
-                <h3 className="text-lg md:text-xl font-semibold text-blue-600 dark:text-gray-200 mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-blue-600 mb-3">
                   {cat}
                 </h3>
                 <div className="flex flex-wrap gap-3">
@@ -66,14 +66,14 @@ const Skills = () => {
                     return (
                       <span
                         key={skill.name + cat}
-                        className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-100 hover-scale cursor-pointer"
+                        className="inline-flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-50 px-3 py-1.5 text-sm font-medium text-gray-800 hover-scale cursor-pointer"
                         style={{
                           animationDelay: `${
                             catIndex * 0.1 + skillIndex * 0.05
                           }s`,
                         }}
                       >
-                        <span className="text-base leading-none flex items-center justify-center text-gray-600 dark:text-gray-300">
+                        <span className="text-base leading-none flex items-center justify-center text-gray-600">
                           <IconComp />
                         </span>
                         {skill.name}

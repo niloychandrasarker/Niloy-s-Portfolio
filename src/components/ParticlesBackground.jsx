@@ -72,11 +72,7 @@ const ParticlesBackground = () => {
         const baseAlpha = 0.25; // previously 0.4
         const alpha = isMenuOpen ? baseAlpha * 0.4 : baseAlpha; // reduce more when menu open
 
-        // Check for dark mode
-        const isDarkMode = document.documentElement.classList.contains("dark");
-        const particleColor = isDarkMode ? "200,200,200" : "170,170,170";
-
-        ctx.fillStyle = `rgba(${particleColor},${alpha})`;
+        ctx.fillStyle = `rgba(170,170,170,${alpha})`;
         ctx.fill();
       }
     }
@@ -110,12 +106,7 @@ const ParticlesBackground = () => {
             const opacityFactor = isMenuOpen ? 0.06 : 0.15; // reduce further
             const opacity = opacityFactor * (1 - distance / maxDistance);
 
-            // Check for dark mode
-            const isDarkMode =
-              document.documentElement.classList.contains("dark");
-            const lineColor = isDarkMode ? "180, 180, 180" : "150, 150, 150";
-
-            ctx.strokeStyle = `rgba(${lineColor}, ${opacity})`;
+            ctx.strokeStyle = `rgba(150, 150, 150, ${opacity})`;
             ctx.lineWidth = isMenuOpen ? 0.4 : 0.8;
             ctx.stroke();
           }
