@@ -7,6 +7,7 @@ import {
   Briefcase,
 } from "lucide-react";
 import { ReactTyped } from "react-typed";
+import { useEffect, useState } from "react";
 
 // Custom Discord Icon
 const DiscordIcon = ({ size = 18, className = "" }) => (
@@ -83,6 +84,16 @@ const Hero = () => {
       "_blank"
     );
   };
+
+  const [showScrollDown, setShowScrollDown] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollDown(window.scrollY < 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section
@@ -255,24 +266,26 @@ const Hero = () => {
         </div>
 
         {/* Scroll Down Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="flex flex-col items-center gap-2 text-gray-600">
-            <span className="text-sm font-medium">Scroll Down</span>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
+        {showScrollDown && (
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="flex flex-col items-center gap-2 text-gray-600">
+              <span className="text-sm font-medium">Scroll Down</span>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
