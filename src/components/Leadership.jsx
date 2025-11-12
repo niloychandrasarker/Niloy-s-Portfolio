@@ -12,19 +12,19 @@ const Leadership = () => {
       color: "from-blue-600 to-cyan-600",
       bgColor: "bg-blue-50",
       iconBg: "bg-blue-100",
-      period: "2023 - Present",
+      period: "2024 - Present",
     },
     {
       id: 2,
       title: "Programming Mentor",
-      organization: "Junior Students",
+      organization: "NITER Computer Club",
       description:
         "Mentoring and guiding junior students in programming fundamentals and problem-solving techniques",
       icon: Users,
       color: "from-purple-600 to-pink-600",
       bgColor: "bg-purple-50",
       iconBg: "bg-purple-100",
-      period: "2023 - Present",
+      period: "2023 - 2424",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Leadership = () => {
       color: "from-orange-600 to-red-600",
       bgColor: "bg-orange-50",
       iconBg: "bg-orange-100",
-      period: "2023 - Present",
+      period: "2024",
     },
   ];
 
