@@ -4,11 +4,6 @@ const Footer = () => (
   <footer className="w-full bg-white border-t border-gray-200 py-2">
     <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-10 text-xs text-gray-500">
       <span>&copy; {new Date().getFullYear()} Niloy Chandra Sarker</span>
-      <div className="flex-1 flex items-center justify-center">
-        <span className="mx-4 text-center">
-          Thank you sincerely for visiting my portfolio
-        </span>
-      </div>
       <span className="flex gap-2 items-center">
         <a
           href="mailto:niloychandrasarker@gmail.com"

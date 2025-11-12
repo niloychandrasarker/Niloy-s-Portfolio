@@ -34,7 +34,8 @@
     { "name": "Postman", "icon": "SiPostman" }
   ],
   "Others": [
-       { "name": "Data Structures & Algorithms", "icon": "TbBinaryTree" },
+    { "name": "Data Structures & Algorithms", "icon": "TbBinaryTree" },
+    { "name": "OOP", "icon": "TbCircleLetterO" },
     { "name": "Competitive Programming", "icon": "SiCodeforces" },
     { "name": "Linux", "icon": "SiLinux" },
     { "name": "System Design", "icon": "TbTopologyStar3" },
@@ -42,7 +43,6 @@
     { "name": "Markdown", "icon": "SiMarkdown" },
     { "name": "Vercel", "icon": "SiVercel" },
     { "name": "Netlify", "icon": "SiNetlify" }
- 
   ],
   "Recent Learning": [
     { "name": "AI/ML", "icon": "SiOpenai", "learning": true },
